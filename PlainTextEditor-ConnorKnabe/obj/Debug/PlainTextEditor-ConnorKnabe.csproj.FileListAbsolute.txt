@@ -11,3 +11,6 @@ C:\Users\Connor Knabe\Documents\Visual Studio 2013\Projects\PlainTextEditor-Conn
 C:\Users\Connor Knabe\Documents\Visual Studio 2013\Projects\PlainTextEditor-ConnorKnabe\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.csproj.GenerateResource.Cache
 C:\Users\Connor Knabe\Documents\Visual Studio 2013\Projects\PlainTextEditor-ConnorKnabe\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.exe
 C:\Users\Connor Knabe\Documents\Visual Studio 2013\Projects\PlainTextEditor-ConnorKnabe\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.pdb
+Z:\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\bin\Debug\PlainTextEditor-ConnorKnabe.exe.config
+Z:\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.exe
+Z:\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.pdb
