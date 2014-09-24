@@ -26,6 +26,7 @@ namespace PlainTextEditor_ConnorKnabe {
             InitializeComponent();
         }
 
+
         private void btnSave_Click(object sender, RoutedEventArgs e) {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
 
@@ -41,7 +42,7 @@ namespace PlainTextEditor_ConnorKnabe {
             }
         }
 
-        private void btnOpen_Click(object sender, RoutedEventArgs e) {
+        private void menuOpen_Click(object sender, RoutedEventArgs e) {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "txt files (*.txt)|*.txt";
             openFileDialog.FilterIndex = 2;
@@ -57,7 +58,14 @@ namespace PlainTextEditor_ConnorKnabe {
             }
         }
 
-       
+        private void txtInput_TextChanged_1(object sender, RoutedEventArgs e) {
+            
+
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e) {
+
+        }
 
       
     }

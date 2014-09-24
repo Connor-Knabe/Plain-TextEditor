@@ -19,8 +19,8 @@
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="_File">
                     <MenuItem Header="_New"/>
-                    <MenuItem Header="_Open"/>
-                    <MenuItem Header="_Save" IsEnabled="False"/>
+                    <MenuItem Header="_Open" Click="menuOpen_Click"/>
+                    <MenuItem Header="_Save" IsEnabled="False" />
                     <MenuItem Header="_Save As"/>
                     <Separator/>
                     <MenuItem Header="_Exit"/>
@@ -35,7 +35,7 @@
         
         <Label Content="Type your text in the box below" x:Name="txtLabel" Grid.Row="1" Grid.Column="1" HorizontalContentAlignment="Center"/>
         <ScrollViewer Grid.Row="2" Grid.ColumnSpan="2" Margin="10,10,9.667,89.333" Grid.RowSpan="2">
-            <TextBox x:Name="txtInput"  TextWrapping="Wrap" AcceptsReturn="True" />
+            <TextBox x:Name="txtInput"  TextWrapping="Wrap" AcceptsReturn="True" TextChanged="txtInput_TextChanged_1"/>
 
 
         </ScrollViewer>
