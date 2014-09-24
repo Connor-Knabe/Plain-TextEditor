@@ -51,7 +51,7 @@ namespace PlainTextEditor_ConnorKnabe {
             // http://msdn.microsoft.com/en-us/library/db5x7c0d(v=VS.85).aspx
             if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
                 textDocument.filePath = openFileDialog.FileName;
-                if (textDocument.openFile()) {
+                if (textDocument.OpenFile()) {
                     txtInput.Text = textDocument.textBoxString;
 
                 }

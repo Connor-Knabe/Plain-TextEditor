@@ -23,7 +23,7 @@ namespace PlainTextEditor_ConnorKnabe {
             }
         }
 
-        public Boolean openFile() {
+        public Boolean OpenFile() {
 
             try {
                 // Create an instance of StreamReader to read from a file.
