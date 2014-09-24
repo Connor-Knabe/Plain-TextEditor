@@ -27,7 +27,7 @@ namespace PlainTextEditor_ConnorKnabe {
         }
 
 
-        private void btnSave_Click(object sender, RoutedEventArgs e) {
+        private void BtnSave_Click(object sender, RoutedEventArgs e) {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
 
             saveFileDialog.Filter = "txt files (*.txt)|*.txt";
@@ -35,14 +35,14 @@ namespace PlainTextEditor_ConnorKnabe {
             saveFileDialog.RestoreDirectory = true;
 
             if (saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
-                if (!textDocument.saveFile(saveFileDialog.FileName, txtInput.Text)) {
+                if (!textDocument.SaveFile(saveFileDialog.FileName, txtInput.Text)) {
                     // http://msdn.microsoft.com/en-us/library/Aa984357
                     System.Windows.Forms.MessageBox.Show("An error occurred saving the report.", "Grader", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
-        private void menuOpen_Click(object sender, RoutedEventArgs e) {
+        private void MenuOpen_Click(object sender, RoutedEventArgs e) {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "txt files (*.txt)|*.txt";
             openFileDialog.FilterIndex = 2;
@@ -58,7 +58,7 @@ namespace PlainTextEditor_ConnorKnabe {
             }
         }
 
-        private void txtInput_TextChanged_1(object sender, RoutedEventArgs e) {
+        private void TxtInput_TextChanged(object sender, RoutedEventArgs e) {
             menuSave.IsEnabled = true;
         }
 

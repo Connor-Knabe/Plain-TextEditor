@@ -12,7 +12,7 @@ namespace PlainTextEditor_ConnorKnabe {
         public String filePath;
         //public List<String> textBoxString = new List<String>();
         public String textBoxString;
-        public Boolean saveFile(String fileName, String text) {
+        public Boolean SaveFile(String fileName, String text) {
             try {
                 using (StreamWriter sw = new StreamWriter(fileName)) {
                     sw.WriteLine(text);
