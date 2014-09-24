@@ -31,7 +31,6 @@ namespace PlainTextEditor_ConnorKnabe {
                 using (StreamReader sr = new StreamReader(filePath)) {
                     // http://msdn.microsoft.com/en-us/library/ms228388(v=vs.80).aspx
                     // http://msdn.microsoft.com/en-us/library/ms131448.aspx
-                    String line = "";
                     // Read and display lines from the file until the end of 
                     // the file is reached.
                     textBoxString = sr.ReadToEnd();

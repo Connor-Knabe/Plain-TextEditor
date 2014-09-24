@@ -14,7 +14,7 @@
         </Grid.RowDefinitions>
         <Label Content="Type your text in the box below" x:Name="txtLabel" Grid.Row="0" Grid.Column="1" HorizontalContentAlignment="Center"/>
         <ScrollViewer Grid.Row="1" Grid.ColumnSpan="2" Margin="10,10,9.667,89.333" Grid.RowSpan="2">
-            <TextBox x:Name="txtInput"  TextWrapping="Wrap"/>
+            <TextBox x:Name="txtInput"  TextWrapping="Wrap" AcceptsReturn="True" />
 
 
         </ScrollViewer>
