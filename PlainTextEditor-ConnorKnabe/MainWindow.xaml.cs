@@ -22,21 +22,16 @@ namespace PlainTextEditor_ConnorKnabe {
         TextDocument textDocument = new TextDocument();
         SaveFileDialog saveFileDialog = new SaveFileDialog();
         private Boolean needsToSave { get; set; }
+        private Boolean cancelSaveDialog { get; set; }
+        private Boolean exitSaveDialog { get; set; }
+
 
         public MainWindow() {
             InitializeComponent();
         }
 
         private void MenuSave_Click(object sender, RoutedEventArgs e) {
-            if (textDocument.hasBeenSaved()) {
-                if (!textDocument.SaveFile(textDocument.textDocFileName, txtInput.Text)) {
-                    // http://msdn.microsoft.com/en-us/library/Aa984357
-                    System.Windows.Forms.MessageBox.Show("An error occurred saving the file.", "TextDocument", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                needsToSave = false;
-            } else {
-                SaveAsHandler();
-            }
+            SaveAsHandler();
         }
 
 
@@ -45,17 +40,25 @@ namespace PlainTextEditor_ConnorKnabe {
         }
 
         private void SaveAsHandler() {
-            saveFileDialog.Filter = "txt files (*.txt)|*.txt";
-            saveFileDialog.FilterIndex = 1;
-            saveFileDialog.RestoreDirectory = true;
-            saveFileDialog.FileName = textDocument.textDocFileName;
-
-            if (saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
-                if (!textDocument.SaveFile(saveFileDialog.FileName, txtInput.Text)) {
+            if (textDocument.hasBeenSaved()) {
+                if (!textDocument.SaveFile(textDocument.textDocFileName, txtInput.Text)) {
                     // http://msdn.microsoft.com/en-us/library/Aa984357
                     System.Windows.Forms.MessageBox.Show("An error occurred saving the file.", "TextDocument", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 needsToSave = false;
+            } else {
+                saveFileDialog.Filter = "txt files (*.txt)|*.txt";
+                saveFileDialog.FilterIndex = 1;
+                saveFileDialog.RestoreDirectory = true;
+                saveFileDialog.FileName = textDocument.textDocFileName;
+
+                if (saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
+                    if (!textDocument.SaveFile(saveFileDialog.FileName, txtInput.Text)) {
+                        // http://msdn.microsoft.com/en-us/library/Aa984357
+                        System.Windows.Forms.MessageBox.Show("An error occurred saving the file.", "TextDocument", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    needsToSave = false;
+                }
             }
 
         }
@@ -95,25 +98,26 @@ namespace PlainTextEditor_ConnorKnabe {
 
            
             if (needsToSave) {
-
                 saveDialog();
-            
             } else {
                 Environment.Exit(0);
             }
-
+      
+            if(exitSaveDialog) {
+                Environment.Exit(0);
+            } 
         }
 
         private void saveDialog() {
- {
-                MessageBoxResult result = System.Windows.MessageBox.Show("Do you want to close this window?",
+                MessageBoxResult result = System.Windows.MessageBox.Show("You have unsaved data.  Would you like to save?",
   "Confirmation", MessageBoxButton.YesNoCancel);
                 if (result == MessageBoxResult.Yes) {
-                    // Yes code here
+                    SaveAsHandler();
+                    exitSaveDialog = true;
                 } else if (result == MessageBoxResult.No) {
-                    // No code here
+                    exitSaveDialog = true;
                 } else {
-                    // Cancel code here
+                    cancelSaveDialog = true;
                 } 
         }
 
