@@ -15,15 +15,18 @@
 
 
 
-        <DockPanel Background="Green">
+        <DockPanel Grid.Row="0" Grid.Column="1" >
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="_File">
                     <MenuItem Header="_New"/>
                     <MenuItem Header="_Open"/>
-                    <MenuItem Header="_Save"/>
+                    <MenuItem Header="_Save" IsEnabled="False"/>
                     <MenuItem Header="_Save As"/>
                     <Separator/>
                     <MenuItem Header="_Exit"/>
+                </MenuItem>
+                <MenuItem Header="_Help">
+                    <MenuItem Header="_About"/>
                 </MenuItem>
             </Menu>
             <StackPanel></StackPanel>
