@@ -21,24 +21,22 @@ namespace PlainTextEditor_ConnorKnabe {
     public partial class MainWindow : Window {
         TextDocument textDocument = new TextDocument();
         SaveFileDialog saveFileDialog = new SaveFileDialog();
-
+        private Boolean needsToSave { get; set; }
 
         public MainWindow() {
             InitializeComponent();
         }
 
         private void MenuSave_Click(object sender, RoutedEventArgs e) {
-
             if (textDocument.hasBeenSaved()) {
                 if (!textDocument.SaveFile(textDocument.textDocFileName, txtInput.Text)) {
                     // http://msdn.microsoft.com/en-us/library/Aa984357
                     System.Windows.Forms.MessageBox.Show("An error occurred saving the file.", "TextDocument", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
+                needsToSave = false;
             } else {
                 SaveAsHandler();
             }
-
         }
 
 
@@ -57,6 +55,7 @@ namespace PlainTextEditor_ConnorKnabe {
                     // http://msdn.microsoft.com/en-us/library/Aa984357
                     System.Windows.Forms.MessageBox.Show("An error occurred saving the file.", "TextDocument", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                needsToSave = false;
             }
 
         }
@@ -81,6 +80,7 @@ namespace PlainTextEditor_ConnorKnabe {
 
         private void TxtInput_TextChanged(object sender, RoutedEventArgs e) {
             menuSave.IsEnabled = true;
+            needsToSave = true;
         }
 
         private void MenuNew_Click(object sender, RoutedEventArgs e) {
@@ -91,6 +91,31 @@ namespace PlainTextEditor_ConnorKnabe {
 
         }
 
+        private void MenuExit_Click(object sender, RoutedEventArgs e) {
+
+           
+            if (needsToSave) {
+
+                saveDialog();
+            
+            } else {
+                Environment.Exit(0);
+            }
+
+        }
+
+        private void saveDialog() {
+ {
+                MessageBoxResult result = System.Windows.MessageBox.Show("Do you want to close this window?",
+  "Confirmation", MessageBoxButton.YesNoCancel);
+                if (result == MessageBoxResult.Yes) {
+                    // Yes code here
+                } else if (result == MessageBoxResult.No) {
+                    // No code here
+                } else {
+                    // Cancel code here
+                } 
+        }
 
       
     }

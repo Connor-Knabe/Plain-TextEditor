@@ -23,7 +23,7 @@
                     <MenuItem x:Name="menuSave" Header="_Save" IsEnabled="False" Click="MenuSave_Click"/>
                     <MenuItem Header="_Save As" Click="MenuSaveAs_Click"/>
                     <Separator/>
-                    <MenuItem Header="_Exit"/>
+                    <MenuItem Header="_Exit" Click="MenuExit_Click"/>
                 </MenuItem>
                 <MenuItem Header="_Help">
                     <MenuItem Header="_About"/>
@@ -35,7 +35,7 @@
         
         <Label Content="Type your text in the box below" x:Name="txtLabel" Grid.Row="1" Grid.Column="1" HorizontalContentAlignment="Center"/>
         <ScrollViewer Grid.Row="2" Grid.ColumnSpan="2" Margin="10,10,9.667,89.333" Grid.RowSpan="2">
-            <TextBox x:Name="txtInput"  TextWrapping="Wrap" AcceptsReturn="True" TextChanged="TxtInput_TextChanged"/>
+            <TextBox x:Name="txtInput"  TextWrapping="Wrap" AcceptsReturn="True" AcceptsTab="True" TextChanged="TxtInput_TextChanged"/>
 
 
         </ScrollViewer>
