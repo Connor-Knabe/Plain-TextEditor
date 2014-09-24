@@ -95,8 +95,6 @@ namespace PlainTextEditor_ConnorKnabe {
         }
 
         private void MenuExit_Click(object sender, RoutedEventArgs e) {
-
-           
             if (needsToSave) {
                 saveDialog();
             } else {
@@ -107,7 +105,10 @@ namespace PlainTextEditor_ConnorKnabe {
                 Environment.Exit(0);
             } 
         }
+        private void MenuAbout_Click(object sender, RoutedEventArgs e) {
+            System.Windows.MessageBox.Show("Developed by Connor Knabe.  Studying to become a software developer at the University of Missouri Columbia.");
 
+        }
         private void saveDialog() {
                 MessageBoxResult result = System.Windows.MessageBox.Show("You have unsaved data.  Would you like to save?",
   "Confirmation", MessageBoxButton.YesNoCancel);
