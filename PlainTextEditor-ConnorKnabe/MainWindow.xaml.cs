@@ -50,7 +50,7 @@ namespace PlainTextEditor_ConnorKnabe {
             saveFileDialog.Filter = "txt files (*.txt)|*.txt";
             saveFileDialog.FilterIndex = 1;
             saveFileDialog.RestoreDirectory = true;
-
+            saveFileDialog.FileName = textDocument.textDocFileName;
 
             if (saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
                 if (!textDocument.SaveFile(saveFileDialog.FileName, txtInput.Text)) {
@@ -66,6 +66,8 @@ namespace PlainTextEditor_ConnorKnabe {
             openFileDialog.Filter = "txt files (*.txt)|*.txt";
             openFileDialog.FilterIndex = 2;
             openFileDialog.RestoreDirectory = true;
+
+            openFileDialog.FileName = textDocument.textDocFileName;
 
             // http://msdn.microsoft.com/en-us/library/db5x7c0d(v=VS.85).aspx
             if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
