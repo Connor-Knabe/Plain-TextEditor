@@ -14,3 +14,16 @@ C:\Users\Connor Knabe\Documents\Visual Studio 2013\Projects\PlainTextEditor-Conn
 Z:\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\bin\Debug\PlainTextEditor-ConnorKnabe.exe.config
 Z:\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.exe
 Z:\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.pdb
+\\vmware-host\Shared Folders\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\bin\Debug\PlainTextEditor-ConnorKnabe.exe.config
+\\vmware-host\Shared Folders\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.exe
+\\vmware-host\Shared Folders\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.pdb
+\\vmware-host\Shared Folders\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\bin\Debug\PlainTextEditor-ConnorKnabe.exe
+\\vmware-host\Shared Folders\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\bin\Debug\PlainTextEditor-ConnorKnabe.pdb
+\\vmware-host\Shared Folders\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\MainWindow.baml
+\\vmware-host\Shared Folders\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\MainWindow.g.cs
+\\vmware-host\Shared Folders\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\App.g.cs
+\\vmware-host\Shared Folders\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe_MarkupCompile.cache
+\\vmware-host\Shared Folders\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.g.resources
+\\vmware-host\Shared Folders\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor_ConnorKnabe.Properties.Resources.resources
+\\vmware-host\Shared Folders\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.csproj.GenerateResource.Cache

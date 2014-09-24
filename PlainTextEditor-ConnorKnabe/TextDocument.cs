@@ -34,10 +34,8 @@ namespace PlainTextEditor_ConnorKnabe {
                     String line = "";
                     // Read and display lines from the file until the end of 
                     // the file is reached.
-                    while ((line = sr.ReadLine()) != null) {
-                        textBoxString=line;
+                    textBoxString = sr.ReadToEnd();
 
-                    }
                 }
 
                 return true;
