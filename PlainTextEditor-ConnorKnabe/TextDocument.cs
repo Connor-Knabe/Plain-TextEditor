@@ -9,9 +9,11 @@ using System.IO;
 namespace PlainTextEditor_ConnorKnabe {
     class TextDocument {
 
-        public String filePath;
+        public String filePath { get; set; }
         //public List<String> textBoxString = new List<String>();
-        public String textBoxString;
+        public String textBoxString { get; set; }
+
+
         public Boolean SaveFile(String fileName, String text) {
             try {
                 using (StreamWriter sw = new StreamWriter(fileName)) {
