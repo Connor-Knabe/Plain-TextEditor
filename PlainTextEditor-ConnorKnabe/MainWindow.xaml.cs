@@ -83,6 +83,8 @@ namespace PlainTextEditor_ConnorKnabe {
 
         private void MenuNew_Click(object sender, RoutedEventArgs e) {
             txtInput.Text = "";
+            textDocument.textDocFileName = null;
+            menuSave.IsEnabled = false;
 
 
         }
