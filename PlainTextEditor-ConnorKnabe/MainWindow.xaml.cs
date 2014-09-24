@@ -20,26 +20,45 @@ using System.IO;
 namespace PlainTextEditor_ConnorKnabe {   
     public partial class MainWindow : Window {
         TextDocument textDocument = new TextDocument();
+        SaveFileDialog saveFileDialog = new SaveFileDialog();
 
 
         public MainWindow() {
             InitializeComponent();
         }
 
+        private void MenuSave_Click(object sender, RoutedEventArgs e) {
+
+            if (textDocument.hasBeenSaved()) {
+                if (!textDocument.SaveFile(textDocument.textDocFileName, txtInput.Text)) {
+                    // http://msdn.microsoft.com/en-us/library/Aa984357
+                    System.Windows.Forms.MessageBox.Show("An error occurred saving the file.", "TextDocument", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            } else {
+                SaveAsHandler();
+            }
+
+        }
+
 
         private void MenuSaveAs_Click(object sender, RoutedEventArgs e) {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            SaveAsHandler();
+        }
 
+        private void SaveAsHandler() {
             saveFileDialog.Filter = "txt files (*.txt)|*.txt";
             saveFileDialog.FilterIndex = 1;
             saveFileDialog.RestoreDirectory = true;
 
+
             if (saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
                 if (!textDocument.SaveFile(saveFileDialog.FileName, txtInput.Text)) {
                     // http://msdn.microsoft.com/en-us/library/Aa984357
-                    System.Windows.Forms.MessageBox.Show("An error occurred saving the report.", "Grader", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    System.Windows.Forms.MessageBox.Show("An error occurred saving the file.", "TextDocument", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+
         }
 
         private void MenuOpen_Click(object sender, RoutedEventArgs e) {

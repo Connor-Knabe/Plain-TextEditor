@@ -20,7 +20,7 @@
                 <MenuItem Header="_File">
                     <MenuItem Header="_New" Click="MenuNew_Click"/>
                     <MenuItem Header="_Open" Click="MenuOpen_Click"/>
-                    <MenuItem x:Name="menuSave" Header="_Save" IsEnabled="False" />
+                    <MenuItem x:Name="menuSave" Header="_Save" IsEnabled="False" Click="MenuSave_Click"/>
                     <MenuItem Header="_Save As" Click="MenuSaveAs_Click"/>
                     <Separator/>
                     <MenuItem Header="_Exit"/>

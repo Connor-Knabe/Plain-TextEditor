@@ -12,13 +12,25 @@ namespace PlainTextEditor_ConnorKnabe {
         public String filePath { get; set; }
         //public List<String> textBoxString = new List<String>();
         public String textBoxString { get; set; }
+        public String textDocFileName { get; set; }
 
+
+        public Boolean hasBeenSaved() {
+
+            if (textDocFileName == null) {
+                return false;
+            } else {
+                return true;
+            }
+        }
 
         public Boolean SaveFile(String fileName, String text) {
             try {
                 using (StreamWriter sw = new StreamWriter(fileName)) {
                     sw.WriteLine(text);
                 }
+
+                textDocFileName = fileName;
                 return true;
             } catch (Exception) {
                 return false;
