@@ -59,13 +59,10 @@ namespace PlainTextEditor_ConnorKnabe {
         }
 
         private void txtInput_TextChanged_1(object sender, RoutedEventArgs e) {
-            
-
+            menuSave.IsEnabled = true;
         }
 
-        private void MenuItem_Click(object sender, RoutedEventArgs e) {
 
-        }
 
       
     }
