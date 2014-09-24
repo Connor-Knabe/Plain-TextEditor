@@ -19,11 +19,5 @@
 
         </ScrollViewer>
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right"
-                    VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="1">
-            <Button x:Name="btnSave" Content="Save" Width="75" Height="24" Margin="3" Click="btnSave_Click"/>
-            <Button x:Name="btnOpen" Content="Open" Width="75" Height="24" Margin="3" Click="btnOpen_Click" />
-        </StackPanel>
-
     </Grid>
 </Window>
