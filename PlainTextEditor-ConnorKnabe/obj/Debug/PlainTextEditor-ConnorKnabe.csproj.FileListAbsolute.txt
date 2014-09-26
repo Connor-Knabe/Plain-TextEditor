@@ -37,3 +37,16 @@ Z:\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainT
 Z:\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.g.resources
 Z:\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor_ConnorKnabe.Properties.Resources.resources
 Z:\C# Development\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.csproj.GenerateResource.Cache
+J:\Plain Text Editor\PlainTextEditor-ConnorKnabe\bin\Debug\PlainTextEditor-ConnorKnabe.exe.config
+J:\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.exe
+J:\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.pdb
+J:\Plain Text Editor\PlainTextEditor-ConnorKnabe\bin\Debug\PlainTextEditor-ConnorKnabe.exe
+J:\Plain Text Editor\PlainTextEditor-ConnorKnabe\bin\Debug\PlainTextEditor-ConnorKnabe.pdb
+J:\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.csprojResolveAssemblyReference.cache
+J:\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\MainWindow.baml
+J:\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\MainWindow.g.cs
+J:\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\App.g.cs
+J:\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe_MarkupCompile.cache
+J:\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.g.resources
+J:\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor_ConnorKnabe.Properties.Resources.resources
+J:\Plain Text Editor\PlainTextEditor-ConnorKnabe\obj\Debug\PlainTextEditor-ConnorKnabe.csproj.GenerateResource.Cache

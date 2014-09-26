@@ -8,13 +8,11 @@ using System.IO;
 
 namespace PlainTextEditor_ConnorKnabe {
     class TextDocument {
-
         public String filePath { get; set; }
         public String textBoxString { get; set; }
         public String textDocFileName { get; set; }
 
-
-        public Boolean hasBeenSaved() {
+        public Boolean HasBeenSaved() {
 
             if (textDocFileName == null) {
                 return false;
