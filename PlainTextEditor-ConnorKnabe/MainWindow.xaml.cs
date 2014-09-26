@@ -96,8 +96,7 @@ namespace PlainTextEditor_ConnorKnabe {
                 if (exitSaveDialog) {
                     NewHandler();
                 }
-            } else {
-                NewHandler();
+     
             }
             if (textDocument.HasBeenSaved()) {
                 NewHandler();
