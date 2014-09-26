@@ -81,7 +81,7 @@ namespace PlainTextEditor_ConnorKnabe {
                 textDocument.filePath = openFileDialog.FileName;
                 if (textDocument.OpenFile()) {
                     txtInput.Text = textDocument.textBoxString;
-
+                    needsToSave = false;
                 }
             }
 
@@ -128,8 +128,12 @@ namespace PlainTextEditor_ConnorKnabe {
                 if (result == MessageBoxResult.Yes) {
                     if (textDocument.HasBeenSaved()) {
                         SaveAsHandler(false);
+                        exitSaveDialog = true;
+
                     } else {
                         SaveAsHandler(true);
+                        exitSaveDialog = true;
+
                     }
                 } else if (result == MessageBoxResult.No) {
                     exitSaveDialog = true;
