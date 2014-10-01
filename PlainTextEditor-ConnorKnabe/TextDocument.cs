@@ -13,7 +13,6 @@ namespace PlainTextEditor_ConnorKnabe {
         public String textDocFileName { get; set; }
 
         public Boolean HasBeenSaved() {
-
             if (textDocFileName == null) {
                 return false;
             } else {
@@ -35,7 +34,6 @@ namespace PlainTextEditor_ConnorKnabe {
         }
 
         public Boolean OpenFile() {
-
             try {
                 // Create an instance of StreamReader to read from a file.
                 // The using statement also closes the StreamReader.
@@ -45,11 +43,8 @@ namespace PlainTextEditor_ConnorKnabe {
                     // Read and display lines from the file until the end of 
                     // the file is reached.
                     textBoxString = sr.ReadToEnd();
-
                 }
-
                 return true;
-
             } catch (Exception ex) {
                 return false;
             }
